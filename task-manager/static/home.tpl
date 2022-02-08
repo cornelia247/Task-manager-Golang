@@ -157,7 +157,7 @@
             }
             this.$http.put('task/'+task.id, {id: task.id, title: task.title, completed: completedToggle}).then(response => {
               if(response.status == 200){
-                this.task[taskIndex].completed = completedToggle;
+                this.tasks[taskIndex].completed = completedToggle;
               }
             });
           },
